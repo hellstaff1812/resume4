@@ -5,70 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Это курс обучение для Тихонова А.С">
     <meta name="keywords" content="html-CSS,course">
-    <title>Home</title>
+    <title>Резюме</title>
+    <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-    <h1>Тихонов Андрей !</h1>
-    <img src="Avatar.jpeg" alt="тут моё фото" width="400">
-    <hr>
-    <p>Я <strong>счастливый</strong> муж и<em> отец</em> </p>
-    <p>А так же я работник торговли, компании ООО ФРЕШ МАРКЕТ , магазина ДА, уже на протяжении трёх лет, в должности Заместитель управляющего . </p>
-    <br>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Програмирование</li>
-        <li>Английский язык</li>
-        <li>Спорт</li>
-    </ol>
-    <br>
-    <h3>Опыт работы </h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ООО Лента</td>
-                <td>Заместитель руководителя</td>
-                <td>2017-2020</td>
-            </tr>
-            <tr>
-                <td>Верный</td>
-                <td>Заместитель директора</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>ООО ФРЕШ МАРКЕТ</td>
-                <td>Заместитель управляющего</td>
-                <td>2020 - сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-    <h4>Cписок социальных сетей </h4>
-    <a href="https://vk.com/id256677869" target="_blank">Вконтакте </a>|
-    <a href="https://web.telegram.org/k/#2131817182" target="_blank">Телеграм</a>
-    <br>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-     <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text"  id="name" placeholder="Введите имя">
-     </div>
-     <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email"  id="email" placeholder="Введите Email">
-     </div>
-     <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-     </div>
+    <div class="container">    
+        <div class="info">
+            
+                <img src="Avatar.jpeg" alt="тут моё фото" class="img">
+            
+                <div class="info-text">
+                    <h1>Тихонов Андрей !</h1>
+                
+                    <hr>
+                    <p>Я <strong>счастливый</strong> муж и<em> отец</em> 
+                    <br>А так же я работник торговли, компании ООО ФРЕШ МАРКЕТ , магазина ДА, уже на протяжении трёх лет, в должности Заместитель управляющего . </p>
 
-     <button type="submit">Отправить!</button>
-    </form>
+                    <h4>Cписок социальных сетей </h4>
+                    <a href="https://vk.com/id256677869" target="_blank">Вконтакте </a>|
+                    <a href="https://web.telegram.org/k/#2131817182" target="_blank">Телеграм</a>
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Програмирование</li>
+                <li>Английский язык</li>
+                <li>Спорт</li>
+            </ol>
+        </div>
+
+        <div class="card bg-red">
+            <h3>Опыт работы </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ООО Лента</td>
+                        <td>Заместитель руководителя</td>
+                        <td>2017-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Верный</td>
+                        <td>Заместитель директора</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>ООО ФРЕШ МАРКЕТ</td>
+                        <td>Заместитель управляющего</td>
+                        <td>2020 - сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div >
+            
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class=" form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text"  id="name" placeholder="Введите имя">
+                    </div>
+                    <div class=" form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email"  id="email" placeholder="Введите Email">
+                    </div>
+                </div>
+                <div class=" form-group">
+                    <br>
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                    <br>
+                    <button type="submit" class="btn">Отправить!</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>
